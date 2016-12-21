@@ -1,0 +1,21 @@
+include ../_mixin/mixin
+
+
+-
+    var reasonText = [
+        "Your website is penalized </br> by Google",
+        "You don’t care about </br> your business anymore",
+        "Your online marketer </br> shas been stolen by aliens"
+    ];
+
+
+.reason
+    .container
+        p.reason__title!= "THE REAESON OF YOUR WEBSITE`S DOWNFALL IS ONE OF THE FOLLOWING:"
+
+        .reason__row
+
+            - for(var i = 0; i < reasonText.length; i++)
+                .reason__block
+                    +circle("circle_big circle_red circle__reason-" + i)
+                    p.reason__text!= reasonText[i]

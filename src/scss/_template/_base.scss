@@ -1,0 +1,125 @@
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_MYWGA";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white				    : return-value(color, white);
+$c-atlantis         : return-value(color, atlantis);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+$c-whisper          : return-value(color, whisper);
+
+
+
+/// <=====> BTN <=====>
+.btn {
+	display: inline-block;
+	height: 73px;
+	line-height: 73px;
+	color: $c-white;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+
+	&__icon {
+		display: inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+		@include retina-sprite($sp-i-btn-group);
+	}
+
+
+	&_blue {
+		background-color: $c-atlantis;
+	}
+
+
+	&_red {
+		background-color: $c-fireEngineRed;
+	}
+
+
+	&.btn_header {
+		float: right;
+	}
+}
+
+/// <=====> CIRCLE <=====>
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: $w-all;
+	border: 1px solid $c-white;
+
+	margin: 0 auto 15px;
+
+
+	&__internal {
+		border-radius: $w-all;
+		overflow: hidden;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	&_big {
+		@include mixinDimensions(190px);
+
+
+		.circle__internal {
+			@include mixinDimensions(180px);
+		}
+	}
+
+
+	&_middle {
+		@include mixinDimensions(144px);
+
+
+		.circle__internal {
+			@include mixinDimensions(124px);
+		}
+	}
+
+
+	&_small {}
+
+
+	&_red {
+		.circle__internal {
+			background-color: $c-fireEngineRed;
+		}
+	}
+
+
+	&_blue {
+		.circle__internal {
+			background-color: $c-atlantis;
+		}
+	}
+
+
+	&_gray {
+		.circle__internal {
+			background-color: $c-whisper;
+		}
+	}
+
+
+	&__border_blue {
+		border-color: $c-atlantis;
+	}
+
+
+	&__border_red {
+		border-color: $c-fireEngineRed;
+	}
+}

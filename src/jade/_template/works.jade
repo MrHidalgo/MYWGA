@@ -1,0 +1,40 @@
+-
+    var worksTitle = [
+        "Wright Now!",
+        "Wright Now!",
+        "10 minutes",
+        "1 hour",
+        "2 weeks",
+        "1 month",
+        "2 month",
+        "3 month"
+    ],
+    worksText = [
+        "You fill the form.",
+        "You pay the 50% of the cost.",
+        "We’ll contact you and ask for all the accetsses needed to start work. Since now — we’re always avialable for you online.",
+        "The project starts.",
+        "Your traffic starts to grow",
+        "Halfway’s back. We’ve recovered at latest the <span class='works__text_red'>30%</span> of traffic.",
+        "Your website is great again: you’ve got at least <span class='works__text_red'>50%</span> of traffic back. If not, your prepay is back.",
+        "You pay as the second 50% of the cost and beg us to stay and be your SEO agency forever."
+    ];
+
+
+
+.works
+    .container
+        p.works__title!= "HOW IT WORKS?"
+
+        .works__row
+            - for(var i = 0; i < worksTitle.length; i++)
+                if(i < 4)
+                    .works__block
+                        +circle("circle_middle circle__border_blue circle_gray circle__works-" + i)
+                        p.works__block-title!= worksTitle[i]
+                        p.works__text!= worksText[i]
+                else
+                    .works__block
+                        +circle("circle_middle circle__border_red circle_gray circle__works-" + i)
+                        p.works__block-title!= worksTitle[i]
+                        p.works__text!= worksText[i]

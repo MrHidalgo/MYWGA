@@ -1,0 +1,72 @@
+///
+/// IMPORT BLOCK
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_MYWGA";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-atlantis         : return-value(color, atlantis);
+
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_bold          : return-value(fonts, PN_bold);
+///
+/// MAIN BLOCK
+///
+.works {
+	min-height: 720px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		color: $c-atlantis;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+
+	&__block-title {
+		font-family: $f-PN_bold;
+	}
+
+
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+	}
+
+
+	&__block {
+		text-align: center;
+		margin-bottom: 30px;
+		width: (100 / 4) * 1%;
+	}
+}
+
+@each $className, $imgName in
+								("0", $sp-i-works-0-group),
+								("1", $sp-i-works-1-group),
+								("2", $sp-i-works-2-group),
+								("3", $sp-i-works-3-group),
+								("4", $sp-i-works-4-group),
+								("5", $sp-i-works-5-group),
+								("6", $sp-i-works-6-group),
+								("7", $sp-i-works-7-group)
+{
+	.circle__works-#{$className} {
+		.circle__icon {
+			display: inline-block;
+			@include retina-sprite($imgName);
+		}
+	}
+}

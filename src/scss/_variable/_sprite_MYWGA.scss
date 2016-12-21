@@ -1,0 +1,694 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sp-i-btn-name: 'sp-i-btn';
+$sp-i-btn-x: 0px;
+$sp-i-btn-y: 0px;
+$sp-i-btn-offset-x: 0px;
+$sp-i-btn-offset-y: 0px;
+$sp-i-btn-width: 32px;
+$sp-i-btn-height: 32px;
+$sp-i-btn-total-width: 180px;
+$sp-i-btn-total-height: 2143px;
+$sp-i-btn-image: '../img/sprite_MYWGA.png';
+$sp-i-btn: (0px, 0px, 0px, 0px, 32px, 32px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-btn', );
+$sp-i-do-0-name: 'sp-i-do-0';
+$sp-i-do-0-x: 0px;
+$sp-i-do-0-y: 37px;
+$sp-i-do-0-offset-x: 0px;
+$sp-i-do-0-offset-y: -37px;
+$sp-i-do-0-width: 180px;
+$sp-i-do-0-height: 180px;
+$sp-i-do-0-total-width: 180px;
+$sp-i-do-0-total-height: 2143px;
+$sp-i-do-0-image: '../img/sprite_MYWGA.png';
+$sp-i-do-0: (0px, 37px, 0px, -37px, 180px, 180px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-do-0', );
+$sp-i-do-1-name: 'sp-i-do-1';
+$sp-i-do-1-x: 0px;
+$sp-i-do-1-y: 222px;
+$sp-i-do-1-offset-x: 0px;
+$sp-i-do-1-offset-y: -222px;
+$sp-i-do-1-width: 119px;
+$sp-i-do-1-height: 127px;
+$sp-i-do-1-total-width: 180px;
+$sp-i-do-1-total-height: 2143px;
+$sp-i-do-1-image: '../img/sprite_MYWGA.png';
+$sp-i-do-1: (0px, 222px, 0px, -222px, 119px, 127px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-do-1', );
+$sp-i-do-2-name: 'sp-i-do-2';
+$sp-i-do-2-x: 0px;
+$sp-i-do-2-y: 354px;
+$sp-i-do-2-offset-x: 0px;
+$sp-i-do-2-offset-y: -354px;
+$sp-i-do-2-width: 120px;
+$sp-i-do-2-height: 128px;
+$sp-i-do-2-total-width: 180px;
+$sp-i-do-2-total-height: 2143px;
+$sp-i-do-2-image: '../img/sprite_MYWGA.png';
+$sp-i-do-2: (0px, 354px, 0px, -354px, 120px, 128px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-do-2', );
+$sp-i-do-3-name: 'sp-i-do-3';
+$sp-i-do-3-x: 0px;
+$sp-i-do-3-y: 487px;
+$sp-i-do-3-offset-x: 0px;
+$sp-i-do-3-offset-y: -487px;
+$sp-i-do-3-width: 120px;
+$sp-i-do-3-height: 129px;
+$sp-i-do-3-total-width: 180px;
+$sp-i-do-3-total-height: 2143px;
+$sp-i-do-3-image: '../img/sprite_MYWGA.png';
+$sp-i-do-3: (0px, 487px, 0px, -487px, 120px, 129px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-do-3', );
+$sp-i-idea-bad-0-name: 'sp-i-idea-bad-0';
+$sp-i-idea-bad-0-x: 0px;
+$sp-i-idea-bad-0-y: 621px;
+$sp-i-idea-bad-0-offset-x: 0px;
+$sp-i-idea-bad-0-offset-y: -621px;
+$sp-i-idea-bad-0-width: 44px;
+$sp-i-idea-bad-0-height: 45px;
+$sp-i-idea-bad-0-total-width: 180px;
+$sp-i-idea-bad-0-total-height: 2143px;
+$sp-i-idea-bad-0-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-bad-0: (0px, 621px, 0px, -621px, 44px, 45px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-bad-0', );
+$sp-i-idea-bad-1-name: 'sp-i-idea-bad-1';
+$sp-i-idea-bad-1-x: 0px;
+$sp-i-idea-bad-1-y: 671px;
+$sp-i-idea-bad-1-offset-x: 0px;
+$sp-i-idea-bad-1-offset-y: -671px;
+$sp-i-idea-bad-1-width: 46px;
+$sp-i-idea-bad-1-height: 45px;
+$sp-i-idea-bad-1-total-width: 180px;
+$sp-i-idea-bad-1-total-height: 2143px;
+$sp-i-idea-bad-1-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-bad-1: (0px, 671px, 0px, -671px, 46px, 45px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-bad-1', );
+$sp-i-idea-bad-2-name: 'sp-i-idea-bad-2';
+$sp-i-idea-bad-2-x: 0px;
+$sp-i-idea-bad-2-y: 721px;
+$sp-i-idea-bad-2-offset-x: 0px;
+$sp-i-idea-bad-2-offset-y: -721px;
+$sp-i-idea-bad-2-width: 44px;
+$sp-i-idea-bad-2-height: 44px;
+$sp-i-idea-bad-2-total-width: 180px;
+$sp-i-idea-bad-2-total-height: 2143px;
+$sp-i-idea-bad-2-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-bad-2: (0px, 721px, 0px, -721px, 44px, 44px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-bad-2', );
+$sp-i-idea-good-0-name: 'sp-i-idea-good-0';
+$sp-i-idea-good-0-x: 0px;
+$sp-i-idea-good-0-y: 770px;
+$sp-i-idea-good-0-offset-x: 0px;
+$sp-i-idea-good-0-offset-y: -770px;
+$sp-i-idea-good-0-width: 45px;
+$sp-i-idea-good-0-height: 44px;
+$sp-i-idea-good-0-total-width: 180px;
+$sp-i-idea-good-0-total-height: 2143px;
+$sp-i-idea-good-0-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-good-0: (0px, 770px, 0px, -770px, 45px, 44px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-good-0', );
+$sp-i-idea-good-1-name: 'sp-i-idea-good-1';
+$sp-i-idea-good-1-x: 0px;
+$sp-i-idea-good-1-y: 819px;
+$sp-i-idea-good-1-offset-x: 0px;
+$sp-i-idea-good-1-offset-y: -819px;
+$sp-i-idea-good-1-width: 45px;
+$sp-i-idea-good-1-height: 45px;
+$sp-i-idea-good-1-total-width: 180px;
+$sp-i-idea-good-1-total-height: 2143px;
+$sp-i-idea-good-1-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-good-1: (0px, 819px, 0px, -819px, 45px, 45px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-good-1', );
+$sp-i-idea-good-2-name: 'sp-i-idea-good-2';
+$sp-i-idea-good-2-x: 0px;
+$sp-i-idea-good-2-y: 869px;
+$sp-i-idea-good-2-offset-x: 0px;
+$sp-i-idea-good-2-offset-y: -869px;
+$sp-i-idea-good-2-width: 45px;
+$sp-i-idea-good-2-height: 44px;
+$sp-i-idea-good-2-total-width: 180px;
+$sp-i-idea-good-2-total-height: 2143px;
+$sp-i-idea-good-2-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-good-2: (0px, 869px, 0px, -869px, 45px, 44px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-good-2', );
+$sp-i-idea-good-3-name: 'sp-i-idea-good-3';
+$sp-i-idea-good-3-x: 0px;
+$sp-i-idea-good-3-y: 918px;
+$sp-i-idea-good-3-offset-x: 0px;
+$sp-i-idea-good-3-offset-y: -918px;
+$sp-i-idea-good-3-width: 45px;
+$sp-i-idea-good-3-height: 45px;
+$sp-i-idea-good-3-total-width: 180px;
+$sp-i-idea-good-3-total-height: 2143px;
+$sp-i-idea-good-3-image: '../img/sprite_MYWGA.png';
+$sp-i-idea-good-3: (0px, 918px, 0px, -918px, 45px, 45px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-idea-good-3', );
+$sp-i-reason-0-name: 'sp-i-reason-0';
+$sp-i-reason-0-x: 0px;
+$sp-i-reason-0-y: 968px;
+$sp-i-reason-0-offset-x: 0px;
+$sp-i-reason-0-offset-y: -968px;
+$sp-i-reason-0-width: 102px;
+$sp-i-reason-0-height: 108px;
+$sp-i-reason-0-total-width: 180px;
+$sp-i-reason-0-total-height: 2143px;
+$sp-i-reason-0-image: '../img/sprite_MYWGA.png';
+$sp-i-reason-0: (0px, 968px, 0px, -968px, 102px, 108px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-reason-0', );
+$sp-i-reason-1-name: 'sp-i-reason-1';
+$sp-i-reason-1-x: 0px;
+$sp-i-reason-1-y: 1081px;
+$sp-i-reason-1-offset-x: 0px;
+$sp-i-reason-1-offset-y: -1081px;
+$sp-i-reason-1-width: 123px;
+$sp-i-reason-1-height: 103px;
+$sp-i-reason-1-total-width: 180px;
+$sp-i-reason-1-total-height: 2143px;
+$sp-i-reason-1-image: '../img/sprite_MYWGA.png';
+$sp-i-reason-1: (0px, 1081px, 0px, -1081px, 123px, 103px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-reason-1', );
+$sp-i-reason-2-name: 'sp-i-reason-2';
+$sp-i-reason-2-x: 0px;
+$sp-i-reason-2-y: 1189px;
+$sp-i-reason-2-offset-x: 0px;
+$sp-i-reason-2-offset-y: -1189px;
+$sp-i-reason-2-width: 127px;
+$sp-i-reason-2-height: 111px;
+$sp-i-reason-2-total-width: 180px;
+$sp-i-reason-2-total-height: 2143px;
+$sp-i-reason-2-image: '../img/sprite_MYWGA.png';
+$sp-i-reason-2: (0px, 1189px, 0px, -1189px, 127px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-reason-2', );
+$sp-i-works-0-name: 'sp-i-works-0';
+$sp-i-works-0-x: 0px;
+$sp-i-works-0-y: 1305px;
+$sp-i-works-0-offset-x: 0px;
+$sp-i-works-0-offset-y: -1305px;
+$sp-i-works-0-width: 108px;
+$sp-i-works-0-height: 82px;
+$sp-i-works-0-total-width: 180px;
+$sp-i-works-0-total-height: 2143px;
+$sp-i-works-0-image: '../img/sprite_MYWGA.png';
+$sp-i-works-0: (0px, 1305px, 0px, -1305px, 108px, 82px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-0', );
+$sp-i-works-1-name: 'sp-i-works-1';
+$sp-i-works-1-x: 0px;
+$sp-i-works-1-y: 1392px;
+$sp-i-works-1-offset-x: 0px;
+$sp-i-works-1-offset-y: -1392px;
+$sp-i-works-1-width: 124px;
+$sp-i-works-1-height: 63px;
+$sp-i-works-1-total-width: 180px;
+$sp-i-works-1-total-height: 2143px;
+$sp-i-works-1-image: '../img/sprite_MYWGA.png';
+$sp-i-works-1: (0px, 1392px, 0px, -1392px, 124px, 63px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-1', );
+$sp-i-works-2-name: 'sp-i-works-2';
+$sp-i-works-2-x: 0px;
+$sp-i-works-2-y: 1460px;
+$sp-i-works-2-offset-x: 0px;
+$sp-i-works-2-offset-y: -1460px;
+$sp-i-works-2-width: 82px;
+$sp-i-works-2-height: 111px;
+$sp-i-works-2-total-width: 180px;
+$sp-i-works-2-total-height: 2143px;
+$sp-i-works-2-image: '../img/sprite_MYWGA.png';
+$sp-i-works-2: (0px, 1460px, 0px, -1460px, 82px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-2', );
+$sp-i-works-3-name: 'sp-i-works-3';
+$sp-i-works-3-x: 0px;
+$sp-i-works-3-y: 1576px;
+$sp-i-works-3-offset-x: 0px;
+$sp-i-works-3-offset-y: -1576px;
+$sp-i-works-3-width: 95px;
+$sp-i-works-3-height: 103px;
+$sp-i-works-3-total-width: 180px;
+$sp-i-works-3-total-height: 2143px;
+$sp-i-works-3-image: '../img/sprite_MYWGA.png';
+$sp-i-works-3: (0px, 1576px, 0px, -1576px, 95px, 103px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-3', );
+$sp-i-works-4-name: 'sp-i-works-4';
+$sp-i-works-4-x: 0px;
+$sp-i-works-4-y: 1684px;
+$sp-i-works-4-offset-x: 0px;
+$sp-i-works-4-offset-y: -1684px;
+$sp-i-works-4-width: 80px;
+$sp-i-works-4-height: 111px;
+$sp-i-works-4-total-width: 180px;
+$sp-i-works-4-total-height: 2143px;
+$sp-i-works-4-image: '../img/sprite_MYWGA.png';
+$sp-i-works-4: (0px, 1684px, 0px, -1684px, 80px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-4', );
+$sp-i-works-5-name: 'sp-i-works-5';
+$sp-i-works-5-x: 0px;
+$sp-i-works-5-y: 1800px;
+$sp-i-works-5-offset-x: 0px;
+$sp-i-works-5-offset-y: -1800px;
+$sp-i-works-5-width: 80px;
+$sp-i-works-5-height: 111px;
+$sp-i-works-5-total-width: 180px;
+$sp-i-works-5-total-height: 2143px;
+$sp-i-works-5-image: '../img/sprite_MYWGA.png';
+$sp-i-works-5: (0px, 1800px, 0px, -1800px, 80px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-5', );
+$sp-i-works-6-name: 'sp-i-works-6';
+$sp-i-works-6-x: 0px;
+$sp-i-works-6-y: 1916px;
+$sp-i-works-6-offset-x: 0px;
+$sp-i-works-6-offset-y: -1916px;
+$sp-i-works-6-width: 80px;
+$sp-i-works-6-height: 111px;
+$sp-i-works-6-total-width: 180px;
+$sp-i-works-6-total-height: 2143px;
+$sp-i-works-6-image: '../img/sprite_MYWGA.png';
+$sp-i-works-6: (0px, 1916px, 0px, -1916px, 80px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-6', );
+$sp-i-works-7-name: 'sp-i-works-7';
+$sp-i-works-7-x: 0px;
+$sp-i-works-7-y: 2032px;
+$sp-i-works-7-offset-x: 0px;
+$sp-i-works-7-offset-y: -2032px;
+$sp-i-works-7-width: 80px;
+$sp-i-works-7-height: 111px;
+$sp-i-works-7-total-width: 180px;
+$sp-i-works-7-total-height: 2143px;
+$sp-i-works-7-image: '../img/sprite_MYWGA.png';
+$sp-i-works-7: (0px, 2032px, 0px, -2032px, 80px, 111px, 180px, 2143px, '../img/sprite_MYWGA.png', 'sp-i-works-7', );
+$sp-i-btn-2x-name: 'sp-i-btn@2x';
+$sp-i-btn-2x-x: 0px;
+$sp-i-btn-2x-y: 0px;
+$sp-i-btn-2x-offset-x: 0px;
+$sp-i-btn-2x-offset-y: 0px;
+$sp-i-btn-2x-width: 64px;
+$sp-i-btn-2x-height: 64px;
+$sp-i-btn-2x-total-width: 360px;
+$sp-i-btn-2x-total-height: 4286px;
+$sp-i-btn-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-btn-2x: (0px, 0px, 0px, 0px, 64px, 64px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-btn@2x', );
+$sp-i-do-0-2x-name: 'sp-i-do-0@2x';
+$sp-i-do-0-2x-x: 0px;
+$sp-i-do-0-2x-y: 74px;
+$sp-i-do-0-2x-offset-x: 0px;
+$sp-i-do-0-2x-offset-y: -74px;
+$sp-i-do-0-2x-width: 360px;
+$sp-i-do-0-2x-height: 360px;
+$sp-i-do-0-2x-total-width: 360px;
+$sp-i-do-0-2x-total-height: 4286px;
+$sp-i-do-0-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-do-0-2x: (0px, 74px, 0px, -74px, 360px, 360px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-do-0@2x', );
+$sp-i-do-1-2x-name: 'sp-i-do-1@2x';
+$sp-i-do-1-2x-x: 0px;
+$sp-i-do-1-2x-y: 444px;
+$sp-i-do-1-2x-offset-x: 0px;
+$sp-i-do-1-2x-offset-y: -444px;
+$sp-i-do-1-2x-width: 238px;
+$sp-i-do-1-2x-height: 254px;
+$sp-i-do-1-2x-total-width: 360px;
+$sp-i-do-1-2x-total-height: 4286px;
+$sp-i-do-1-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-do-1-2x: (0px, 444px, 0px, -444px, 238px, 254px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-do-1@2x', );
+$sp-i-do-2-2x-name: 'sp-i-do-2@2x';
+$sp-i-do-2-2x-x: 0px;
+$sp-i-do-2-2x-y: 708px;
+$sp-i-do-2-2x-offset-x: 0px;
+$sp-i-do-2-2x-offset-y: -708px;
+$sp-i-do-2-2x-width: 240px;
+$sp-i-do-2-2x-height: 256px;
+$sp-i-do-2-2x-total-width: 360px;
+$sp-i-do-2-2x-total-height: 4286px;
+$sp-i-do-2-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-do-2-2x: (0px, 708px, 0px, -708px, 240px, 256px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-do-2@2x', );
+$sp-i-do-3-2x-name: 'sp-i-do-3@2x';
+$sp-i-do-3-2x-x: 0px;
+$sp-i-do-3-2x-y: 974px;
+$sp-i-do-3-2x-offset-x: 0px;
+$sp-i-do-3-2x-offset-y: -974px;
+$sp-i-do-3-2x-width: 240px;
+$sp-i-do-3-2x-height: 258px;
+$sp-i-do-3-2x-total-width: 360px;
+$sp-i-do-3-2x-total-height: 4286px;
+$sp-i-do-3-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-do-3-2x: (0px, 974px, 0px, -974px, 240px, 258px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-do-3@2x', );
+$sp-i-idea-bad-0-2x-name: 'sp-i-idea-bad-0@2x';
+$sp-i-idea-bad-0-2x-x: 0px;
+$sp-i-idea-bad-0-2x-y: 1242px;
+$sp-i-idea-bad-0-2x-offset-x: 0px;
+$sp-i-idea-bad-0-2x-offset-y: -1242px;
+$sp-i-idea-bad-0-2x-width: 88px;
+$sp-i-idea-bad-0-2x-height: 90px;
+$sp-i-idea-bad-0-2x-total-width: 360px;
+$sp-i-idea-bad-0-2x-total-height: 4286px;
+$sp-i-idea-bad-0-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-bad-0-2x: (0px, 1242px, 0px, -1242px, 88px, 90px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-bad-0@2x', );
+$sp-i-idea-bad-1-2x-name: 'sp-i-idea-bad-1@2x';
+$sp-i-idea-bad-1-2x-x: 0px;
+$sp-i-idea-bad-1-2x-y: 1342px;
+$sp-i-idea-bad-1-2x-offset-x: 0px;
+$sp-i-idea-bad-1-2x-offset-y: -1342px;
+$sp-i-idea-bad-1-2x-width: 92px;
+$sp-i-idea-bad-1-2x-height: 90px;
+$sp-i-idea-bad-1-2x-total-width: 360px;
+$sp-i-idea-bad-1-2x-total-height: 4286px;
+$sp-i-idea-bad-1-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-bad-1-2x: (0px, 1342px, 0px, -1342px, 92px, 90px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-bad-1@2x', );
+$sp-i-idea-bad-2-2x-name: 'sp-i-idea-bad-2@2x';
+$sp-i-idea-bad-2-2x-x: 0px;
+$sp-i-idea-bad-2-2x-y: 1442px;
+$sp-i-idea-bad-2-2x-offset-x: 0px;
+$sp-i-idea-bad-2-2x-offset-y: -1442px;
+$sp-i-idea-bad-2-2x-width: 88px;
+$sp-i-idea-bad-2-2x-height: 88px;
+$sp-i-idea-bad-2-2x-total-width: 360px;
+$sp-i-idea-bad-2-2x-total-height: 4286px;
+$sp-i-idea-bad-2-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-bad-2-2x: (0px, 1442px, 0px, -1442px, 88px, 88px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-bad-2@2x', );
+$sp-i-idea-good-0-2x-name: 'sp-i-idea-good-0@2x';
+$sp-i-idea-good-0-2x-x: 0px;
+$sp-i-idea-good-0-2x-y: 1540px;
+$sp-i-idea-good-0-2x-offset-x: 0px;
+$sp-i-idea-good-0-2x-offset-y: -1540px;
+$sp-i-idea-good-0-2x-width: 90px;
+$sp-i-idea-good-0-2x-height: 88px;
+$sp-i-idea-good-0-2x-total-width: 360px;
+$sp-i-idea-good-0-2x-total-height: 4286px;
+$sp-i-idea-good-0-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-good-0-2x: (0px, 1540px, 0px, -1540px, 90px, 88px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-good-0@2x', );
+$sp-i-idea-good-1-2x-name: 'sp-i-idea-good-1@2x';
+$sp-i-idea-good-1-2x-x: 0px;
+$sp-i-idea-good-1-2x-y: 1638px;
+$sp-i-idea-good-1-2x-offset-x: 0px;
+$sp-i-idea-good-1-2x-offset-y: -1638px;
+$sp-i-idea-good-1-2x-width: 90px;
+$sp-i-idea-good-1-2x-height: 90px;
+$sp-i-idea-good-1-2x-total-width: 360px;
+$sp-i-idea-good-1-2x-total-height: 4286px;
+$sp-i-idea-good-1-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-good-1-2x: (0px, 1638px, 0px, -1638px, 90px, 90px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-good-1@2x', );
+$sp-i-idea-good-2-2x-name: 'sp-i-idea-good-2@2x';
+$sp-i-idea-good-2-2x-x: 0px;
+$sp-i-idea-good-2-2x-y: 1738px;
+$sp-i-idea-good-2-2x-offset-x: 0px;
+$sp-i-idea-good-2-2x-offset-y: -1738px;
+$sp-i-idea-good-2-2x-width: 90px;
+$sp-i-idea-good-2-2x-height: 88px;
+$sp-i-idea-good-2-2x-total-width: 360px;
+$sp-i-idea-good-2-2x-total-height: 4286px;
+$sp-i-idea-good-2-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-good-2-2x: (0px, 1738px, 0px, -1738px, 90px, 88px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-good-2@2x', );
+$sp-i-idea-good-3-2x-name: 'sp-i-idea-good-3@2x';
+$sp-i-idea-good-3-2x-x: 0px;
+$sp-i-idea-good-3-2x-y: 1836px;
+$sp-i-idea-good-3-2x-offset-x: 0px;
+$sp-i-idea-good-3-2x-offset-y: -1836px;
+$sp-i-idea-good-3-2x-width: 90px;
+$sp-i-idea-good-3-2x-height: 90px;
+$sp-i-idea-good-3-2x-total-width: 360px;
+$sp-i-idea-good-3-2x-total-height: 4286px;
+$sp-i-idea-good-3-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-idea-good-3-2x: (0px, 1836px, 0px, -1836px, 90px, 90px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-idea-good-3@2x', );
+$sp-i-reason-0-2x-name: 'sp-i-reason-0@2x';
+$sp-i-reason-0-2x-x: 0px;
+$sp-i-reason-0-2x-y: 1936px;
+$sp-i-reason-0-2x-offset-x: 0px;
+$sp-i-reason-0-2x-offset-y: -1936px;
+$sp-i-reason-0-2x-width: 204px;
+$sp-i-reason-0-2x-height: 216px;
+$sp-i-reason-0-2x-total-width: 360px;
+$sp-i-reason-0-2x-total-height: 4286px;
+$sp-i-reason-0-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-reason-0-2x: (0px, 1936px, 0px, -1936px, 204px, 216px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-reason-0@2x', );
+$sp-i-reason-1-2x-name: 'sp-i-reason-1@2x';
+$sp-i-reason-1-2x-x: 0px;
+$sp-i-reason-1-2x-y: 2162px;
+$sp-i-reason-1-2x-offset-x: 0px;
+$sp-i-reason-1-2x-offset-y: -2162px;
+$sp-i-reason-1-2x-width: 246px;
+$sp-i-reason-1-2x-height: 206px;
+$sp-i-reason-1-2x-total-width: 360px;
+$sp-i-reason-1-2x-total-height: 4286px;
+$sp-i-reason-1-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-reason-1-2x: (0px, 2162px, 0px, -2162px, 246px, 206px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-reason-1@2x', );
+$sp-i-reason-2-2x-name: 'sp-i-reason-2@2x';
+$sp-i-reason-2-2x-x: 0px;
+$sp-i-reason-2-2x-y: 2378px;
+$sp-i-reason-2-2x-offset-x: 0px;
+$sp-i-reason-2-2x-offset-y: -2378px;
+$sp-i-reason-2-2x-width: 254px;
+$sp-i-reason-2-2x-height: 222px;
+$sp-i-reason-2-2x-total-width: 360px;
+$sp-i-reason-2-2x-total-height: 4286px;
+$sp-i-reason-2-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-reason-2-2x: (0px, 2378px, 0px, -2378px, 254px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-reason-2@2x', );
+$sp-i-works-0-2x-name: 'sp-i-works-0@2x';
+$sp-i-works-0-2x-x: 0px;
+$sp-i-works-0-2x-y: 2610px;
+$sp-i-works-0-2x-offset-x: 0px;
+$sp-i-works-0-2x-offset-y: -2610px;
+$sp-i-works-0-2x-width: 216px;
+$sp-i-works-0-2x-height: 164px;
+$sp-i-works-0-2x-total-width: 360px;
+$sp-i-works-0-2x-total-height: 4286px;
+$sp-i-works-0-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-0-2x: (0px, 2610px, 0px, -2610px, 216px, 164px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-0@2x', );
+$sp-i-works-1-2x-name: 'sp-i-works-1@2x';
+$sp-i-works-1-2x-x: 0px;
+$sp-i-works-1-2x-y: 2784px;
+$sp-i-works-1-2x-offset-x: 0px;
+$sp-i-works-1-2x-offset-y: -2784px;
+$sp-i-works-1-2x-width: 248px;
+$sp-i-works-1-2x-height: 126px;
+$sp-i-works-1-2x-total-width: 360px;
+$sp-i-works-1-2x-total-height: 4286px;
+$sp-i-works-1-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-1-2x: (0px, 2784px, 0px, -2784px, 248px, 126px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-1@2x', );
+$sp-i-works-2-2x-name: 'sp-i-works-2@2x';
+$sp-i-works-2-2x-x: 0px;
+$sp-i-works-2-2x-y: 2920px;
+$sp-i-works-2-2x-offset-x: 0px;
+$sp-i-works-2-2x-offset-y: -2920px;
+$sp-i-works-2-2x-width: 164px;
+$sp-i-works-2-2x-height: 222px;
+$sp-i-works-2-2x-total-width: 360px;
+$sp-i-works-2-2x-total-height: 4286px;
+$sp-i-works-2-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-2-2x: (0px, 2920px, 0px, -2920px, 164px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-2@2x', );
+$sp-i-works-3-2x-name: 'sp-i-works-3@2x';
+$sp-i-works-3-2x-x: 0px;
+$sp-i-works-3-2x-y: 3152px;
+$sp-i-works-3-2x-offset-x: 0px;
+$sp-i-works-3-2x-offset-y: -3152px;
+$sp-i-works-3-2x-width: 190px;
+$sp-i-works-3-2x-height: 206px;
+$sp-i-works-3-2x-total-width: 360px;
+$sp-i-works-3-2x-total-height: 4286px;
+$sp-i-works-3-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-3-2x: (0px, 3152px, 0px, -3152px, 190px, 206px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-3@2x', );
+$sp-i-works-4-2x-name: 'sp-i-works-4@2x';
+$sp-i-works-4-2x-x: 0px;
+$sp-i-works-4-2x-y: 3368px;
+$sp-i-works-4-2x-offset-x: 0px;
+$sp-i-works-4-2x-offset-y: -3368px;
+$sp-i-works-4-2x-width: 160px;
+$sp-i-works-4-2x-height: 222px;
+$sp-i-works-4-2x-total-width: 360px;
+$sp-i-works-4-2x-total-height: 4286px;
+$sp-i-works-4-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-4-2x: (0px, 3368px, 0px, -3368px, 160px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-4@2x', );
+$sp-i-works-5-2x-name: 'sp-i-works-5@2x';
+$sp-i-works-5-2x-x: 0px;
+$sp-i-works-5-2x-y: 3600px;
+$sp-i-works-5-2x-offset-x: 0px;
+$sp-i-works-5-2x-offset-y: -3600px;
+$sp-i-works-5-2x-width: 160px;
+$sp-i-works-5-2x-height: 222px;
+$sp-i-works-5-2x-total-width: 360px;
+$sp-i-works-5-2x-total-height: 4286px;
+$sp-i-works-5-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-5-2x: (0px, 3600px, 0px, -3600px, 160px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-5@2x', );
+$sp-i-works-6-2x-name: 'sp-i-works-6@2x';
+$sp-i-works-6-2x-x: 0px;
+$sp-i-works-6-2x-y: 3832px;
+$sp-i-works-6-2x-offset-x: 0px;
+$sp-i-works-6-2x-offset-y: -3832px;
+$sp-i-works-6-2x-width: 160px;
+$sp-i-works-6-2x-height: 222px;
+$sp-i-works-6-2x-total-width: 360px;
+$sp-i-works-6-2x-total-height: 4286px;
+$sp-i-works-6-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-6-2x: (0px, 3832px, 0px, -3832px, 160px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-6@2x', );
+$sp-i-works-7-2x-name: 'sp-i-works-7@2x';
+$sp-i-works-7-2x-x: 0px;
+$sp-i-works-7-2x-y: 4064px;
+$sp-i-works-7-2x-offset-x: 0px;
+$sp-i-works-7-2x-offset-y: -4064px;
+$sp-i-works-7-2x-width: 160px;
+$sp-i-works-7-2x-height: 222px;
+$sp-i-works-7-2x-total-width: 360px;
+$sp-i-works-7-2x-total-height: 4286px;
+$sp-i-works-7-2x-image: '../img/sprite_MYWGA@2x.png';
+$sp-i-works-7-2x: (0px, 4064px, 0px, -4064px, 160px, 222px, 360px, 4286px, '../img/sprite_MYWGA@2x.png', 'sp-i-works-7@2x', );
+$spritesheet-width: 180px;
+$spritesheet-height: 2143px;
+$spritesheet-image: '../img/sprite_MYWGA.png';
+$spritesheet-sprites: ($sp-i-btn, $sp-i-do-0, $sp-i-do-1, $sp-i-do-2, $sp-i-do-3, $sp-i-idea-bad-0, $sp-i-idea-bad-1, $sp-i-idea-bad-2, $sp-i-idea-good-0, $sp-i-idea-good-1, $sp-i-idea-good-2, $sp-i-idea-good-3, $sp-i-reason-0, $sp-i-reason-1, $sp-i-reason-2, $sp-i-works-0, $sp-i-works-1, $sp-i-works-2, $sp-i-works-3, $sp-i-works-4, $sp-i-works-5, $sp-i-works-6, $sp-i-works-7, );
+$spritesheet: (180px, 2143px, '../img/sprite_MYWGA.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 360px;
+$retina-spritesheet-height: 4286px;
+$retina-spritesheet-image: '../img/sprite_MYWGA@2x.png';
+$retina-spritesheet-sprites: ($sp-i-btn-2x, $sp-i-do-0-2x, $sp-i-do-1-2x, $sp-i-do-2-2x, $sp-i-do-3-2x, $sp-i-idea-bad-0-2x, $sp-i-idea-bad-1-2x, $sp-i-idea-bad-2-2x, $sp-i-idea-good-0-2x, $sp-i-idea-good-1-2x, $sp-i-idea-good-2-2x, $sp-i-idea-good-3-2x, $sp-i-reason-0-2x, $sp-i-reason-1-2x, $sp-i-reason-2-2x, $sp-i-works-0-2x, $sp-i-works-1-2x, $sp-i-works-2-2x, $sp-i-works-3-2x, $sp-i-works-4-2x, $sp-i-works-5-2x, $sp-i-works-6-2x, $sp-i-works-7-2x, );
+$retina-spritesheet: (360px, 4286px, '../img/sprite_MYWGA@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$sp-i-btn-group-name: 'sp-i-btn';
+$sp-i-btn-group: ('sp-i-btn', $sp-i-btn, $sp-i-btn-2x, );
+$sp-i-do-0-group-name: 'sp-i-do-0';
+$sp-i-do-0-group: ('sp-i-do-0', $sp-i-do-0, $sp-i-do-0-2x, );
+$sp-i-do-1-group-name: 'sp-i-do-1';
+$sp-i-do-1-group: ('sp-i-do-1', $sp-i-do-1, $sp-i-do-1-2x, );
+$sp-i-do-2-group-name: 'sp-i-do-2';
+$sp-i-do-2-group: ('sp-i-do-2', $sp-i-do-2, $sp-i-do-2-2x, );
+$sp-i-do-3-group-name: 'sp-i-do-3';
+$sp-i-do-3-group: ('sp-i-do-3', $sp-i-do-3, $sp-i-do-3-2x, );
+$sp-i-idea-bad-0-group-name: 'sp-i-idea-bad-0';
+$sp-i-idea-bad-0-group: ('sp-i-idea-bad-0', $sp-i-idea-bad-0, $sp-i-idea-bad-0-2x, );
+$sp-i-idea-bad-1-group-name: 'sp-i-idea-bad-1';
+$sp-i-idea-bad-1-group: ('sp-i-idea-bad-1', $sp-i-idea-bad-1, $sp-i-idea-bad-1-2x, );
+$sp-i-idea-bad-2-group-name: 'sp-i-idea-bad-2';
+$sp-i-idea-bad-2-group: ('sp-i-idea-bad-2', $sp-i-idea-bad-2, $sp-i-idea-bad-2-2x, );
+$sp-i-idea-good-0-group-name: 'sp-i-idea-good-0';
+$sp-i-idea-good-0-group: ('sp-i-idea-good-0', $sp-i-idea-good-0, $sp-i-idea-good-0-2x, );
+$sp-i-idea-good-1-group-name: 'sp-i-idea-good-1';
+$sp-i-idea-good-1-group: ('sp-i-idea-good-1', $sp-i-idea-good-1, $sp-i-idea-good-1-2x, );
+$sp-i-idea-good-2-group-name: 'sp-i-idea-good-2';
+$sp-i-idea-good-2-group: ('sp-i-idea-good-2', $sp-i-idea-good-2, $sp-i-idea-good-2-2x, );
+$sp-i-idea-good-3-group-name: 'sp-i-idea-good-3';
+$sp-i-idea-good-3-group: ('sp-i-idea-good-3', $sp-i-idea-good-3, $sp-i-idea-good-3-2x, );
+$sp-i-reason-0-group-name: 'sp-i-reason-0';
+$sp-i-reason-0-group: ('sp-i-reason-0', $sp-i-reason-0, $sp-i-reason-0-2x, );
+$sp-i-reason-1-group-name: 'sp-i-reason-1';
+$sp-i-reason-1-group: ('sp-i-reason-1', $sp-i-reason-1, $sp-i-reason-1-2x, );
+$sp-i-reason-2-group-name: 'sp-i-reason-2';
+$sp-i-reason-2-group: ('sp-i-reason-2', $sp-i-reason-2, $sp-i-reason-2-2x, );
+$sp-i-works-0-group-name: 'sp-i-works-0';
+$sp-i-works-0-group: ('sp-i-works-0', $sp-i-works-0, $sp-i-works-0-2x, );
+$sp-i-works-1-group-name: 'sp-i-works-1';
+$sp-i-works-1-group: ('sp-i-works-1', $sp-i-works-1, $sp-i-works-1-2x, );
+$sp-i-works-2-group-name: 'sp-i-works-2';
+$sp-i-works-2-group: ('sp-i-works-2', $sp-i-works-2, $sp-i-works-2-2x, );
+$sp-i-works-3-group-name: 'sp-i-works-3';
+$sp-i-works-3-group: ('sp-i-works-3', $sp-i-works-3, $sp-i-works-3-2x, );
+$sp-i-works-4-group-name: 'sp-i-works-4';
+$sp-i-works-4-group: ('sp-i-works-4', $sp-i-works-4, $sp-i-works-4-2x, );
+$sp-i-works-5-group-name: 'sp-i-works-5';
+$sp-i-works-5-group: ('sp-i-works-5', $sp-i-works-5, $sp-i-works-5-2x, );
+$sp-i-works-6-group-name: 'sp-i-works-6';
+$sp-i-works-6-group: ('sp-i-works-6', $sp-i-works-6, $sp-i-works-6-2x, );
+$sp-i-works-7-group-name: 'sp-i-works-7';
+$sp-i-works-7-group: ('sp-i-works-7', $sp-i-works-7, $sp-i-works-7-2x, );
+$retina-groups: ($sp-i-btn-group, $sp-i-do-0-group, $sp-i-do-1-group, $sp-i-do-2-group, $sp-i-do-3-group, $sp-i-idea-bad-0-group, $sp-i-idea-bad-1-group, $sp-i-idea-bad-2-group, $sp-i-idea-good-0-group, $sp-i-idea-good-1-group, $sp-i-idea-good-2-group, $sp-i-idea-good-3-group, $sp-i-reason-0-group, $sp-i-reason-1-group, $sp-i-reason-2-group, $sp-i-works-0-group, $sp-i-works-1-group, $sp-i-works-2-group, $sp-i-works-3-group, $sp-i-works-4-group, $sp-i-works-5-group, $sp-i-works-6-group, $sp-i-works-7-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+-
+    var navLink = [
+        "WHAT TO DO?",
+        "HOW IT WORKS",
+        "WHO WE ARE"
+    ],
+    navHref = [
+        "#test",
+        "#test",
+        "#test"
+    ];
+
+
+
+.nav
+    -for(var i = 0; i < navLink.length; i++)
+        a(href= navHref[i], class="nav__btn")!= navLink[i]

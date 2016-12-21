@@ -1,0 +1,20 @@
+-
+    var doText = [
+        "Deep analytics of 200+ parameters, based on your unique expirience and data from successful projects.",
+        "Revision of all SEO activities done before. One-by-one disawoving the spammy links even thought there are thousends of them.",
+        "Renovation of all the content. Engaging stories instead of boring shitty texts, well-organized design instead of chaos.",
+        "Web analytics, A/B tsts - everyrhing to get lower bounce rate and more pageviews per every user. That gives not only trafic, but money, as well."
+    ];
+
+
+
+.do
+    .container
+        p.do__title!= "THAT`S EXACTLY WHAT WE DO. AND IT WORKS. </br> THE FORMULA OF SUCCESS IS THAT EASY:"
+
+        .do__row
+
+            - for(var i = 0; i < doText.length; i++)
+                .do__block
+                    +circle("circle_big circle_blue circle__do-" + i)
+                    p.do__text!= doText[i]

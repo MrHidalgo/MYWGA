@@ -1,0 +1,53 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-atlantis         : return-value(color, atlantis);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_light         : return-value(fonts, PN_light);
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_bold          : return-value(fonts, PN_bold);
+///
+/// MAIN BLOCK
+///
+.slogan {
+
+
+	&__text {
+		font: {
+			size: 34px;
+			family: $f-PN_light;
+		}
+		line-height: 1.2;
+
+
+		&_red {
+			color: $c-fireEngineRed;
+			font-family: $f-PN_bold;
+		}
+	}
+
+
+	&__title {
+		font: {
+			size: 50px;
+			family: $f-PN_black;
+		}
+		line-height: 1;
+	}
+
+
+	&__text,
+	&__title {
+		color: $c-atlantis;
+		margin-bottom: 30px;
+	}
+}

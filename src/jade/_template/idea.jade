@@ -1,0 +1,38 @@
+-
+    var ideaBadText = [
+        "Panic!",
+        "Get out of business",
+        "Hire the most expensive marketers in the neighbourhood"
+    ],
+    ideaGoodText = [
+        "Analyze your website SEO metrics",
+        "Get rid of spammy backlinks",
+        "Create new wonderful content",
+        "Improve on-site user`s behavior"
+    ];
+
+
+.idea.clearfix
+    .container
+        .idea__left
+
+            p.idea__left-title!= "NOW, WHEN WE </br> BOTH KNOW </br> THE REASON, </br> WHAT TO DO?"
+
+        .idea__right.clearfix
+            .idea__right-half
+                p.idea__right-title!= "Bad idea"
+
+                .idea__wrap
+                    -for(var i = 0; i < ideaBadText.length; i++)
+                        div(class="idea__block idea__block_bad idea__block-" + i)
+                            i.idea__icon
+                            p.idea__text!= ideaBadText[i]
+
+            .idea__right-half
+                p.idea__right-title.idea__right-title_red!= "Good idea"
+
+                .idea__wrap
+                    -for(var i = 0; i < ideaGoodText.length; i++)
+                        div(class="idea__block idea__block_good idea__block-" + i)
+                            i.idea__icon
+                            p.idea__text!= ideaGoodText[i]

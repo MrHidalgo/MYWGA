@@ -1,0 +1,41 @@
+///
+/// IMPORT BLOCK
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-bunting          : return-value(color, bunting);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_bold          : return-value(fonts, PN_bold);
+///
+/// MAIN
+///
+.nav {
+	display: inline-block;
+	margin-left: 120px;
+	height: 124px;
+	line-height: 124px;
+	vertical-align: top;
+
+
+	&__btn {
+		font: {
+			size: 13px;
+			family: $f-PN_bold;
+		}
+		color: $c-bunting;
+		margin-right: 50px;
+
+
+		&:hover {
+			color: $c-fireEngineRed;
+			transition: all .3s ease-in;
+		}
+	}
+}

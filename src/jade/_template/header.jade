@@ -1,0 +1,25 @@
+
+header.header
+    .header__top
+        .container
+            //- LOGOTYPE
+            include macros/logo
+
+            //- NAVIGATION
+            include macros/nav
+
+    .container
+
+        //- HEADER GRAPH [image]
+        .header__left
+            img(src="./img/img-header-graph.png", class="img-responsive header__img")
+
+
+        .header__right.clearfix.slogan
+
+            //- SLOGAN
+            include macros/slogan
+
+            a(href="javascript:void(0);", class="btn btn_header btn_blue")
+                i.btn__icon
+                | GET THE RESQUE NOW

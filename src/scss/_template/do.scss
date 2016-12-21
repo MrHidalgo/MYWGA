@@ -1,0 +1,69 @@
+///
+/// IMPORT BLOCK
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite_MYWGA";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white            : return-value(color, white);
+$c-atlantis         : return-value(color, atlantis);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_black         : return-value(fonts, PN_black);
+///
+/// MAIN BLOCK
+///
+.do {
+	min-height: 520px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: $c-fireEngineRed;
+
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		color: $c-white;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+
+	&__row {
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+	&__block {
+		text-align: center;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+
+	&__text {
+		color: $c-white;
+	}
+}
+
+@each $className, $imgName in
+								("0", $sp-i-do-0-group),
+								("1", $sp-i-do-1-group),
+								("2", $sp-i-do-2-group),
+								("3", $sp-i-do-3-group)
+{
+	.circle__do-#{$className} {
+		.circle__icon {
+			display: inline-block;
+			@include retina-sprite($imgName);
+		}
+	}
+}
