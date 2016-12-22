@@ -22,9 +22,30 @@ $f-PN_black         : return-value(fonts, PN_black);
 	min-height: 520px;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	@include respond-to(medium) {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include respond-to(small-all) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+
+	&__left,
+	&__right {
+		float: left;
+		width: 50%;
+	}
 
 
 	&__left {
+		@include respond-to(large) {
+			width: 40%;
+		}
+		@include respond-to(medium-all) {
+			width: 100%;
+		}
 
 
 		&-title {
@@ -34,16 +55,41 @@ $f-PN_black         : return-value(fonts, PN_black);
 			}
 			color: $c-atlantis;
 			padding-top: 50px;
+			@include respond-to(large) {
+				font-size: 40px;
+			}
+			@include respond-to(medium-all) {
+				br {
+					display: none;
+				}
+				font-size: 35px;
+				text-align: center;
+				margin-bottom: 20px;
+				padding-top: 0;
+			}
+			@include respond-to(small-all) {
+				font-size: 30px;
+			}
 		}
 	}
 
 
 	&__right {
+		@include respond-to(large) {
+			width: 60%;
+		}
+		@include respond-to(medium-all) {
+			width: 100%;
+		}
 
 
 		&-half {
 			float: left;
 			width: 50%;
+			@include respond-to(small-all) {
+				float: none;
+				width: 100%;
+			}
 		}
 
 
@@ -55,6 +101,9 @@ $f-PN_black         : return-value(fonts, PN_black);
 			padding-bottom: 30px;
 			line-height: 1;
 			position: relative;
+			@include respond-to(small-all) {
+				text-align: center;
+			}
 
 
 			&:after {
@@ -64,6 +113,9 @@ $f-PN_black         : return-value(fonts, PN_black);
 				bottom: 10px;
 				@include mixinDimensions(44px, 1px);
 				background-color: $c-whisper;
+				@include respond-to(small-all) {
+					width: 100%;
+				}
 			}
 
 
@@ -74,25 +126,27 @@ $f-PN_black         : return-value(fonts, PN_black);
 	}
 
 
-	&__left,
-	&__right {
-		float: left;
-		width: 50%;
-	}
-
-
 	&__block {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 
 		margin-bottom: 30px;
+		@include respond-to(small-all) {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 
 
 	&__text {
 		width: 170px;
 		margin-left: 30px;
+		@include respond-to(small-all) {
+			width: 100%;
+			margin-left: 0;
+			margin-top: 15px;
+		}
 	}
 }
 

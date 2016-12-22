@@ -15,16 +15,130 @@ $f-PN_light         : return-value(fonts, PN_light);
 $f-PN_black         : return-value(fonts, PN_black);
 
 
+/// <=====> TITLE <=====>
+.main__title {
+	@include respond-to("medium") {
+		font-size: 25px;
+	}
+	@include respond-to("small-all") {
+		font-size: 22px;
+	}
+}
+
 /// <=====> BTN <=====>
 .btn {
 	display: inline-block;
 	height: 73px;
-	line-height: 73px;
 	color: $c-white;
 	letter-spacing: 2px;
 	font-size: 12px;
 	padding-left: 40px;
 	padding-right: 40px;
+	text-align: center;
+	@include respond-to("small-all") {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		letter-spacing: 1px;
+	}
+
+
+	&__mobile {
+		display: none;
+		@include mixinDimensions(50px);
+		background-color: $c-atlantis;
+		border-radius: $w-all;
+		position: absolute;
+		right: 15px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		@include respond-to(medium-all) {
+			display: block;
+		}
+
+
+		&-close {
+			display: none;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			@include mixinDimensions(50px);
+
+
+			&-line {
+
+
+				&:before {
+					transform: rotate(45deg);
+				}
+
+
+				&:after {
+					transform: rotate(-45deg);
+				}
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					@include mixinDimensions(28px, 3px);
+					background-color: $c-atlantis;
+				}
+			}
+		}
+
+
+		&-line {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			@include mixinDimensions(28px, 2px);
+			background-color: $c-white;
+
+
+			&:before {
+				top: -8px;
+			}
+			&:after {
+				bottom: -8px;
+			}
+
+
+			&:before,
+			&:after {
+				position: absolute;
+				content: "";
+				@include mixinDimensions(28px, 2px);
+				background-color: $c-white;
+			}
+		}
+	}
+
+
+	&:before {
+		content: '';
+		display: inline-block;
+		margin-right: -.32em;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
 
 	&__icon {

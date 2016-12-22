@@ -3,7 +3,7 @@
     .container
 
         .lose__row
-            p.lose__title!= "WHILE YOU ARE READING </br> THIS TEXT, YOU LOSE:"
+            p.lose__title.main__title!= "WHILE YOU ARE READING </br> THIS TEXT, YOU LOSE:"
 
             .lose__count
                 div.lose__count-wrap
@@ -11,7 +11,7 @@
                         span.lose__count-num!= "0"
                 span.lose__count-text!= "$"
 
-            a(href="javascript:void(0);", class="btn btn_header btn_red")
+            a(href="javascript:void(0);", class="btn btn_red")
                 i.btn__icon
-                | GET THE RESQUE NOW
+                span.btn__text!= "GET THE RESQUE NOW"
 

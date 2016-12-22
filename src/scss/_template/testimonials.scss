@@ -37,12 +37,30 @@ $f-PN_light         : return-value(fonts, PN_light);
 	&__row {
 		display: flex;
 		justify-content: space-around;
+		@include respond-to("large") {
+			flex-flow: row wrap;
+		}
+		@include respond-to("medium-all") {
+			flex-flow: row wrap;
+		}
 	}
 
 
 	&__block {
 		width: (100 / 4) * 1%;
 		padding: 5px 10px;
+		@include respond-to("large") {
+			width: (100 / 2) * 1%;
+		}
+		@include respond-to("medium-all") {
+			margin-bottom: 20px;
+		}
+		@include respond-to("medium") {
+			width: (100 / 2) * 1%;
+		}
+		@include respond-to("small-all") {
+			width: 100%;
+		}
 
 
 		&-header {

@@ -42,11 +42,18 @@ $f-PN_black         : return-value(fonts, PN_black);
 	&__row {
 		display: flex;
 		justify-content: space-around;
+		@include respond-to(small-all) {
+			flex-flow: row wrap;
+		}
 	}
 
 
 	&__block {
 		text-align: center;
+		@include respond-to(small-all) {
+			width: 100%;
+			margin-bottom: 25px;
+		}
 	}
 }
 

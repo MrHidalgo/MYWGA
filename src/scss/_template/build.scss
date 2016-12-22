@@ -19,6 +19,14 @@ $f-PN_light         : return-value(fonts, PN_light);
 .build {
 	padding-top: 100px;
 	padding-bottom: 100px;
+	@include respond-to("large") {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include respond-to("medium-all") {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 
 	&__left {
@@ -34,6 +42,10 @@ $f-PN_light         : return-value(fonts, PN_light);
 	&__left,
 	&__right {
 		float: left;
+		@include respond-to("small-all") {
+			width: 100%;
+			float: none;
+		}
 	}
 
 
@@ -44,6 +56,16 @@ $f-PN_light         : return-value(fonts, PN_light);
 		}
 		color: $c-fireEngineRed;
 		margin-bottom: 20px;
+		@include respond-to("large") {
+			font-size: 45px;
+		}
+		@include respond-to("medium") {
+			font-size: 30px;
+		}
+		@include respond-to("small-all") {
+			font-size: 25px;
+			text-align: center;
+		}
 	}
 
 
@@ -53,5 +75,24 @@ $f-PN_light         : return-value(fonts, PN_light);
 			family: $f-PN_light;
 		}
 		max-width: 510px;
+		@include respond-to("large") {
+			font-size: 28px;
+		}
+		@include respond-to("medium") {
+			font-size: 22px;
+		}
+		@include respond-to("small-all") {
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 25px;
+		}
+	}
+
+
+	&__img {
+		max-width: 100%;
+		@include respond-to("small-all") {
+			margin-top: 20px;
+		}
 	}
 }

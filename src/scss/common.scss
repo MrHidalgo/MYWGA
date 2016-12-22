@@ -1,7 +1,3 @@
-@import "_template/_grid";
-@import "_template/_base";
-@import "_template/_main";
-
 @import "_template/header";
 @import "_template/reason";
 @import "_template/idea";
@@ -13,3 +9,7 @@
 @import "_template/testimonials";
 @import "_template/contacts";
 @import "_template/footer";
+
+@import "_template/_grid";
+@import "_template/_base";
+@import "_template/_main";

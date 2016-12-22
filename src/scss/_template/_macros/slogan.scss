@@ -27,6 +27,12 @@ $f-PN_bold          : return-value(fonts, PN_bold);
 			family: $f-PN_light;
 		}
 		line-height: 1.2;
+		@include respond-to(large) {
+			font-size: 27px;
+		}
+		@include respond-to(small-all) {
+			font-size: 22px;
+		}
 
 
 		&_red {
@@ -42,6 +48,12 @@ $f-PN_bold          : return-value(fonts, PN_bold);
 			family: $f-PN_black;
 		}
 		line-height: 1;
+		@include respond-to(large) {
+			font-size: 35px;
+		}
+		@include respond-to(small-all) {
+			font-size: 28px;
+		}
 	}
 
 

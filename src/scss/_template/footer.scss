@@ -17,6 +17,12 @@ $c-atlantis         : return-value(color, atlantis);
 	height: 75px;
 	line-height: 69px;
 	border-top: 6px solid $c-atlantis;
+	@include respond-to("small-all") {
+		padding-top: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+		line-height: 1.4;
+	}
 
 
 	&__title {

@@ -54,6 +54,9 @@ $f-PN_light         : return-value(fonts, PN_light);
 			size: 16px;
 			family: $f-PN_light;
 		}
+		@include respond-to("small-all") {
+			width: 100%;
+		}
 	}
 
 
@@ -66,6 +69,9 @@ $f-PN_light         : return-value(fonts, PN_light);
 		background-color: $c-white;
 		border: none;
 		text-align: right;
+		@include respond-to("medium-all") {
+			display: none;
+		}
 	}
 
 
@@ -75,6 +81,16 @@ $f-PN_light         : return-value(fonts, PN_light);
 			family: $f-PN_black;
 		}
 		color: $c-atlantis;
+		@include respond-to("large") {
+			font-size: 24px;
+		}
+		@include respond-to("medium") {
+			font-size: 22px;
+		}
+		@include respond-to("small-all") {
+			font-size: 15px;
+		}
+
 
 
 		&-num {
@@ -84,6 +100,16 @@ $f-PN_light         : return-value(fonts, PN_light);
 			color: $c-fireEngineRed;
 			vertical-align: middle;
 			margin-left: 40px;
+			@include respond-to("large") {
+				font-size: 45px;
+			}
+			@include respond-to("medium") {
+				font-size: 40px;
+			}
+			@include respond-to("small-all") {
+				font-size: 30px;
+				margin-left: 15px;
+			}
 		}
 	}
 
@@ -93,6 +119,9 @@ $f-PN_light         : return-value(fonts, PN_light);
 		font:{
 			size: 24px;
 			family: $f-PN_light;
+		}
+		@include respond-to("small-all") {
+			font-size: 18px;
 		}
 
 
@@ -104,12 +133,25 @@ $f-PN_light         : return-value(fonts, PN_light);
 			color: $c-atlantis;
 			vertical-align: middle;
 			margin-left: 40px;
+			@include respond-to("large") {
+				font-size: 45px;
+			}
+			@include respond-to("medium") {
+				font-size: 40px;
+			}
+			@include respond-to("small-all") {
+				font-size: 30px;
+				margin-left: 15px;
+			}
 		}
 	}
 
 
 	&__left {
 		text-align: right;
+		@include respond-to("medium-all") {
+			margin-bottom: 15px;
+		}
 	}
 
 
@@ -117,6 +159,10 @@ $f-PN_light         : return-value(fonts, PN_light);
 	&__right {
 		width: 50%;
 		float: left;
+		@include respond-to("medium-all") {
+			width: 100%;
+			float: none;
+		}
 	}
 }
 

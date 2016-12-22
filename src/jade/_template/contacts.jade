@@ -1,7 +1,7 @@
 
 .contacts
     .container
-        p.contacts__title!= "START TO RESCUE YOUR WEBSITE NOW!"
+        p.contacts__title.main__title!= "START TO RESCUE YOUR WEBSITE NOW!"
 
         .contacts__row.clearfix
             .contacts__left
@@ -18,6 +18,6 @@
 
         a(href="javascript:void(0);", class="btn btn_contacts btn_red")
             i.btn__icon
-            | MAKE MY WEBSITE GREAT AGAIN
+            span.btn__text!= "MAKE MY WEBSITE GREAT AGAIN"
 
         p.contacts__text!= "Fill in the form and we the process will start"

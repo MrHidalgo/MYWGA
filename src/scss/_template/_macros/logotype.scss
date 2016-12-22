@@ -23,6 +23,9 @@ $f-PN_black         : return-value(fonts, PN_black);
 	border: 1px solid $c-fireEngineRed;
 	text-align: center;
 	margin-top: 30px;
+	@include respond-to(extra-small) {
+		width: 220px;
+	}
 
 
 	&__title {
@@ -33,6 +36,9 @@ $f-PN_black         : return-value(fonts, PN_black);
 		color: $c-atlantis;
 		line-height: 62px;
 		letter-spacing: 10px;
+		@include respond-to(extra-small) {
+			font-size: 25px;
+		}
 	}
 
 
@@ -58,6 +64,9 @@ $f-PN_black         : return-value(fonts, PN_black);
 		font-size: 15px;
 		background-color: $c-white;
 		line-height: 1;
+		@include respond-to(extra-small) {
+			font-size: 13px;
+		}
 	}
 
 
