@@ -1,0 +1,33 @@
+-
+    var areText = [
+        "Of SEO expirience",
+        "Of getting websites </br> out of Google Filers </br> since 2012.",
+        "So many professionals </br> working in our team </br> worldwide.",
+        "Visitors we returned </br> to our clients in 2016."
+    ],
+    areCircleTitle = [
+        "8",
+        "143",
+        "54",
+        "57.2"
+    ],
+    areCircleSubTitle = [
+        "years",
+        "cases",
+        "specialists",
+        "millions"
+    ];
+
+
+.are
+    .container
+
+        p.are__title!= "WHO WE ARE?"
+        p.are__subtitle!= "The tem of SEO professionals focused on the most difficult cases and formed to help site owners </br> get their trafic back after Google Penalties, Panda, Penguine and other filters."
+
+        .are__row
+
+            - for(var i = 0; i < areText.length; i++)
+                .are__block
+                    +circleText("circle_big circle_white circle__are-" + i, areCircleTitle[i], areCircleSubTitle[i])
+                    p.are__text!= areText[i]

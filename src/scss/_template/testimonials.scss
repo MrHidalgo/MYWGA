@@ -9,6 +9,85 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-grey             : return-value(color, grey);
+$c-atlantis         : return-value(color, atlantis);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_light         : return-value(fonts, PN_light);
 ///
 /// MAIN BLOCK
 ///
+.testimonials {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		color: $c-fireEngineRed;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+
+	&__row {
+		display: flex;
+		justify-content: space-around;
+	}
+
+
+	&__block {
+		width: (100 / 4) * 1%;
+		padding: 5px 10px;
+
+
+		&-header {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			margin-bottom: 30px;
+		}
+	}
+
+
+	&__wrap-img {
+		@include mixinDimensions(80px);
+		border-radius: $w-all;
+		border: 1px solid $c-fireEngineRed;
+		padding: 4px;
+	}
+
+
+	&__name {
+		color: $c-atlantis;
+		font-family: $f-PN_light;
+		padding-bottom: 10px;
+
+
+		&_upper {
+			text-transform: uppercase;
+		}
+	}
+
+
+	&__site {
+		color: $c-grey;
+		font-size: 14px;
+		text-decoration: underline;
+	}
+
+
+	&__text {
+		margin-left: 20px;
+	}
+
+
+	&__description {
+		font-size: 14px;
+	}
+}

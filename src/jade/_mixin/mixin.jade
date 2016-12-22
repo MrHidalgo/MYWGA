@@ -26,3 +26,9 @@ mixin circle(className)
     div(class="circle " + className)
         .circle__internal
             i.circle__icon
+
+mixin circleText(className, title, subtitle)
+    div(class="circle " + className)
+        .circle__internal
+            p.circle__title!= title
+            p.circle__subtitle!= subtitle

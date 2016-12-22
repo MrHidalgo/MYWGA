@@ -11,6 +11,8 @@ $c-atlantis         : return-value(color, atlantis);
 $c-fireEngineRed    : return-value(color, fireEngineRed);
 $c-whisper          : return-value(color, whisper);
 
+$f-PN_light         : return-value(fonts, PN_light);
+$f-PN_black         : return-value(fonts, PN_black);
 
 
 /// <=====> BTN <=====>
@@ -43,7 +45,7 @@ $c-whisper          : return-value(color, whisper);
 	}
 
 
-	&.btn_header {
+	&_header {
 		float: right;
 	}
 }
@@ -65,6 +67,7 @@ $c-whisper          : return-value(color, whisper);
 		overflow: hidden;
 
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
@@ -90,7 +93,22 @@ $c-whisper          : return-value(color, whisper);
 	}
 
 
-	&_small {}
+	&__title {
+		font: {
+			size: 70px;
+			family: $f-PN_black;
+		}
+		line-height: 1;
+		color: $c-fireEngineRed;
+	}
+
+
+	&__subtitle {
+		font: {
+			size: 25px;
+			family: $f-PN_light;
+		}
+	}
 
 
 	&_red {
@@ -110,6 +128,13 @@ $c-whisper          : return-value(color, whisper);
 	&_gray {
 		.circle__internal {
 			background-color: $c-whisper;
+		}
+	}
+
+
+	&_white {
+		.circle__internal {
+			background-color: $c-white;
 		}
 	}
 

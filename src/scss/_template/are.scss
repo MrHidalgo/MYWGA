@@ -9,6 +9,55 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-atlantis         : return-value(color, atlantis);
+
+$f-PN_black         : return-value(fonts, PN_black);
 ///
 /// MAIN BLOCK
 ///
+.are {
+	background-color: $c-atlantis;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		margin-bottom: 15px;
+	}
+
+
+	&__subtitle {
+		margin-bottom: 50px;
+	}
+
+
+	&__title,
+	&__subtitle {
+		color: $c-white;
+		text-align: center;
+	}
+
+
+	&__row {
+		display: flex;
+		justify-content: space-around;
+
+
+	}
+
+
+	&__block {
+		text-align: center;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+
+	&__text {
+		color: $c-white;
+	}
+}

@@ -9,6 +9,74 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-whisper          : return-value(color, whisper);
+$c-atlantis         : return-value(color, atlantis);
+
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_bold          : return-value(fonts, PN_bold);
 ///
 /// MAIN BLOCK
 ///
+.lose {
+	min-height: 170px;
+	background-color: $c-whisper;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		color: $c-atlantis;
+	}
+
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+
+	&__count {
+		display: flex;
+		align-items: center;
+
+
+		&-num {
+			@include mixinDimensions(42px, 72px);
+			background-color: $c-white;
+			margin-left: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			text-align: center;
+			font: {
+				family: $f-PN_bold;
+			}
+
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+
+
+		&-text {
+			color: $c-atlantis;
+			margin-left: 20px;
+			font: {
+				family: $f-PN_black;
+			}
+		}
+
+
+		&-num,
+		&-text {
+			font: {
+				size: 50px;
+			}
+		}
+	}
+}

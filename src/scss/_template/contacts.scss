@@ -9,6 +9,118 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-bunting          : return-value(color, bunting);
+$c-whisper          : return-value(color, whisper);
+$c-atlantis         : return-value(color, atlantis);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_light         : return-value(fonts, PN_light);
 ///
 /// MAIN BLOCK
 ///
+.contacts {
+	background-color: $c-whisper;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+
+
+	&__title {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		margin-bottom: 30px;
+		color: $c-fireEngineRed;
+	}
+
+
+	&__text {
+		color: $c-atlantis;
+		font-family: $f-PN_light;
+		margin-top: 20px;
+	}
+
+
+	&__input {
+		@include mixinDimensions(380px, 48px);
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 45px;
+		outline: none;
+		border: none;
+		font: {
+			size: 16px;
+			family: $f-PN_light;
+		}
+	}
+
+
+	&__line {
+		float: right;
+		clear: both;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		@include mixinDimensions(480px, 3px);
+		background-color: $c-white;
+		border: none;
+		text-align: right;
+	}
+
+
+	&__cost {
+		font: {
+			size: 30px;
+			family: $f-PN_black;
+		}
+		color: $c-atlantis;
+
+
+		&-num {
+			font: {
+				size: 50px;
+			}
+			color: $c-fireEngineRed;
+			vertical-align: middle;
+			margin-left: 40px;
+		}
+	}
+
+
+	&__payment,
+	&__result {
+		font:{
+			size: 24px;
+			family: $f-PN_light;
+		}
+
+
+		&-num {
+			font: {
+				size: 50px;
+				family: $f-PN_black;
+			}
+			color: $c-atlantis;
+			vertical-align: middle;
+			margin-left: 40px;
+		}
+	}
+
+
+	&__left {
+		text-align: right;
+	}
+
+
+	&__left,
+	&__right {
+		width: 50%;
+		float: left;
+	}
+}
+
+input.contacts__input::-webkit-input-placeholder {color: $c-bunting;}
+input.contacts__input::-moz-placeholder {color: $c-bunting;}
+input.contacts__input:-moz-placeholder {color: $c-bunting;}
+input.contacts__input::placeholder {color: $c-bunting;}

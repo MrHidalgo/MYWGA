@@ -1,0 +1,46 @@
+-
+    var testimonialsImg = [
+        "./img/img-testimonials-0.png",
+        "./img/img-testimonials-1.png",
+        "./img/img-testimonials-2.png",
+        "./img/img-testimonials-3.png"
+    ];
+    var testimonialsName = [
+        "Hillary <span class='testimonials__name_upper'>Clinton, <i>NY</i></span>",
+        "Joe <span class='testimonials__name_upper'>Biden, <i>VT</i></span>",
+        "Ted <span class='testimonials__name_upper'>Cruz, <i>TX</i></span>",
+        "Marco <span class='testimonials__name_upper'>Rubio, <i>FL</i></span>"
+    ];
+    var testimonialsSite = [
+        "www.bpr.bcp.org",
+        "www.soundcloud.com",
+        "www.fontsquirrel.com",
+        "www.uateam.tv"
+    ];
+    var testimonialsDesc = [
+        "Hillary Clinton benefits from widespread name recognition, and a powerful political machine built by Bill Clinton’s successful political career. The biggest issue for most candidates in primaries is a lack of popularity and name recognition, people often don’t know who they are, and so they get little support outside their hometown base.",
+        "VPs are a common choice for Presidential nominations after the incumbent President has served two terms. Biden can point to his experience in the White House, as well as his long service in the US Senate to show that he would be experienced enough to be President.",
+        "Ted Cruz has the strength of being the first candidate to declare his intention to run for President. This has allowed him to dominate the news and headlines, giving him much needed publicity. Cruz also has the strength of appearing to be the standard bearer for the conservative, Tea-Party backed wing of the GOP. ",
+        "Marco Rubio hails from the ever important state of Florida and he has been a constant critic of Obama’s foreign policy. His experience as a Senator and his Hispanic background could help him try to stage an upset campaign. Rubio’s stock crashed when he co sponsored immigration legislation in the Senate that was decried as amnesty by conservatives. His poll numbers tanked, and despite saying he’s learned better and changed his views, he has not been able to recover."
+    ];
+
+
+
+.testimonials
+    .container
+
+        p.testimonials__title!= "TESTIMONIALS"
+
+        .testimonials__row
+            -for(var i = 0; i < testimonialsImg.length; i++)
+                .testimonials__block
+                    .testimonials__block-header
+                        .testimonials__wrap-img
+                            img(src= testimonialsImg[i], class="img-responsive testimonials__img")
+
+                        .testimonials__text
+                            h4.testimonials__name!= testimonialsName[i]
+                            a(href="javascript:void(0);", class="testimonials__site")!= testimonialsSite[i]
+
+                    .testimonials__block-footer
+                        p.testimonials__description!= testimonialsDesc[i]

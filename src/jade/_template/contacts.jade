@@ -1,0 +1,23 @@
+
+.contacts
+    .container
+        p.contacts__title!= "START TO RESCUE YOUR WEBSITE NOW!"
+
+        .contacts__row.clearfix
+            .contacts__left
+                p.contacts__cost!= "THE COST OF RESCUE: <span class='contacts__cost-num'>2000$</span>"
+                span.contacts__line
+                p.contacts__payment!= "prepeyment <span class='contacts__payment-num'>1000$</span>"
+                p.contacts__result!= "result-based payment <span class='contacts__result-num'>1000$</span>"
+
+            .contacts__right
+                form(action="")
+                    input(type="text", name="", placeholder="Name *", class="contacts__input")
+                    input(type="text", name="", placeholder="E-mail *", class="contacts__input")
+                    input(type="text", name="", placeholder="Phone number / Skype", class="contacts__input")
+
+        a(href="javascript:void(0);", class="btn btn_contacts btn_red")
+            i.btn__icon
+            | MAKE MY WEBSITE GREAT AGAIN
+
+        p.contacts__text!= "Fill in the form and we the process will start"

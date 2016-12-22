@@ -106,7 +106,7 @@
 }
 
 
-.btn.btn_header {
+.btn_header {
   float: right;
 }
 
@@ -137,6 +137,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -172,6 +177,20 @@
 }
 
 
+.circle__title {
+  font-size: 70px;
+  font-family: "Proxima Nova Black";
+  line-height: 1;
+  color: #cd1225;
+}
+
+
+.circle__subtitle {
+  font-size: 25px;
+  font-family: "Proxima Nova Light";
+}
+
+
 .circle_red .circle__internal {
   background-color: #cd1225;
 }
@@ -184,6 +203,11 @@
 
 .circle_gray .circle__internal {
   background-color: #e6e6e6;
+}
+
+
+.circle_white .circle__internal {
+  background-color: #fff;
 }
 
 
@@ -1012,6 +1036,367 @@ input {
     background-image: url(../img/sprite_MYWGA@2x.png);
     background-size: 180px 2143px;
   }
+}
+
+
+.lose {
+  min-height: 170px;
+  background-color: #e6e6e6;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.lose__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Black";
+  color: #2b325f;
+}
+
+
+.lose__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+
+.lose__count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.lose__count-num {
+  width: 42px;
+  height: 72px;
+  background-color: #fff;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  font-family: "Proxima Nova Bold";
+}
+
+
+.lose__count-num:first-of-type {
+  margin-left: 0;
+}
+
+
+.lose__count-text {
+  color: #2b325f;
+  margin-left: 20px;
+  font-family: "Proxima Nova Black";
+}
+
+
+.lose__count-num, .lose__count-text {
+  font-size: 50px;
+}
+
+
+.build {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.build__left {
+  width: 55%;
+}
+
+
+.build__right {
+  width: 45%;
+}
+
+
+.build__left, .build__right {
+  float: left;
+}
+
+
+.build__title {
+  font-size: 50px;
+  font-family: "Proxima Nova Black";
+  color: #cd1225;
+  margin-bottom: 20px;
+}
+
+
+.build__text {
+  font-size: 32px;
+  font-family: "Proxima Nova Light";
+  max-width: 510px;
+}
+
+
+.are {
+  background-color: #2b325f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.are__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Black";
+  margin-bottom: 15px;
+}
+
+
+.are__subtitle {
+  margin-bottom: 50px;
+}
+
+
+.are__title, .are__subtitle {
+  color: #fff;
+  text-align: center;
+}
+
+
+.are__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+
+.are__block {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.are__text {
+  color: #fff;
+}
+
+
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.testimonials__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Black";
+  color: #cd1225;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.testimonials__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+
+.testimonials__block {
+  width: 25%;
+  padding: 5px 10px;
+}
+
+
+.testimonials__block-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+
+.testimonials__wrap-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid #cd1225;
+  padding: 4px;
+}
+
+
+.testimonials__name {
+  color: #2b325f;
+  font-family: "Proxima Nova Light";
+  padding-bottom: 10px;
+}
+
+
+.testimonials__name_upper {
+  text-transform: uppercase;
+}
+
+
+.testimonials__site {
+  color: #808080;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+.testimonials__text {
+  margin-left: 20px;
+}
+
+
+.testimonials__description {
+  font-size: 14px;
+}
+
+
+.contacts {
+  background-color: #e6e6e6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+.contacts__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Black";
+  margin-bottom: 30px;
+  color: #cd1225;
+}
+
+
+.contacts__text {
+  color: #2b325f;
+  font-family: "Proxima Nova Light";
+  margin-top: 20px;
+}
+
+
+.contacts__input {
+  width: 380px;
+  height: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 45px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: "Proxima Nova Light";
+}
+
+
+.contacts__line {
+  float: right;
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 480px;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+  text-align: right;
+}
+
+
+.contacts__cost {
+  font-size: 30px;
+  font-family: "Proxima Nova Black";
+  color: #2b325f;
+}
+
+
+.contacts__cost-num {
+  font-size: 50px;
+  color: #cd1225;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+
+.contacts__payment, .contacts__result {
+  font-size: 24px;
+  font-family: "Proxima Nova Light";
+}
+
+
+.contacts__payment-num, .contacts__result-num {
+  font-size: 50px;
+  font-family: "Proxima Nova Black";
+  color: #2b325f;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+
+.contacts__left {
+  text-align: right;
+}
+
+
+.contacts__left, .contacts__right {
+  width: 50%;
+  float: left;
+}
+
+
+input.contacts__input::-webkit-input-placeholder {
+  color: #323544;
+}
+
+
+input.contacts__input::-moz-placeholder {
+  color: #323544;
+}
+
+
+input.contacts__input:-moz-placeholder {
+  color: #323544;
+}
+
+
+input.contacts__input::-webkit-input-placeholder {
+  color: #323544;
+}
+input.contacts__input::-moz-placeholder {
+  color: #323544;
+}
+input.contacts__input:-ms-input-placeholder {
+  color: #323544;
+}
+input.contacts__input::placeholder {
+  color: #323544;
 }
 
 

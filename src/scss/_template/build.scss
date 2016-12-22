@@ -9,6 +9,49 @@
 $w-all              : return-value(dimension, all);
 
 $c-white            : return-value(color, white);
+$c-fireEngineRed    : return-value(color, fireEngineRed);
+
+$f-PN_black         : return-value(fonts, PN_black);
+$f-PN_light         : return-value(fonts, PN_light);
 ///
 /// MAIN BLOCK
 ///
+.build {
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+
+	&__left {
+		width:  55%;
+	}
+
+
+	&__right {
+		width:  45%;
+	}
+
+
+	&__left,
+	&__right {
+		float: left;
+	}
+
+
+	&__title {
+		font: {
+			size: 50px;
+			family: $f-PN_black;
+		}
+		color: $c-fireEngineRed;
+		margin-bottom: 20px;
+	}
+
+
+	&__text {
+		font: {
+			size: 32px;
+			family: $f-PN_light;
+		}
+		max-width: 510px;
+	}
+}
