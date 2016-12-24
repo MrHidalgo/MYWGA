@@ -32,6 +32,17 @@ $c-atlantis         : return-value(color, atlantis);
 		background-color: $c-white;
 		border-top: 6px solid $c-atlantis;
 		margin-bottom: 50px;
+
+
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			box-shadow: 0 0 10px 0 rgba(0,0,0,.45);
+			transition: all .5s ease-in;
+		}
 	}
 
 

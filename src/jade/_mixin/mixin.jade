@@ -27,8 +27,8 @@ mixin circle(className)
         .circle__internal
             i.circle__icon
 
-mixin circleText(className, title, subtitle)
+mixin circleText(className, title, subtitle, dataFrom, dataTo)
     div(class="circle " + className)
         .circle__internal
-            p.circle__title!= title
+            p(class="circle__title" data-from=dataFrom data-to=dataTo)!= title
             p.circle__subtitle!= subtitle

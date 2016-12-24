@@ -17,9 +17,14 @@
         "specialists",
         "millions"
     ];
+    var dataFrom = [
+        "0",
+        "0",
+        "0",
+        "0"
+    ];
 
-
-.are
+.are#are
     .container
 
         p.are__title.main__title!= "WHO WE ARE?"
@@ -29,5 +34,5 @@
 
             - for(var i = 0; i < areText.length; i++)
                 .are__block
-                    +circleText("circle_big circle_white circle__are-" + i, areCircleTitle[i], areCircleSubTitle[i])
+                    +circleText("circle_big circle_white circle__are-" + i, areCircleTitle[i], areCircleSubTitle[i], dataFrom[i], areCircleTitle[i])
                     p.are__text!= areText[i]

@@ -1,5 +1,6 @@
 
 .logotype {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   width: 280px;
@@ -9,7 +10,7 @@
   margin-top: 30px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   
   .logotype {
     width: 220px;
@@ -25,7 +26,7 @@
   letter-spacing: 10px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   
   .logotype__title {
     font-size: 25px;
@@ -56,7 +57,7 @@
   line-height: 1;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   
   .logotype__subtitle-0, .logotype__subtitle-1 {
     font-size: 13px;
@@ -102,6 +103,11 @@
 }
 
 
+.nav__row.animated {
+  display: block;
+}
+
+
 .nav__btn {
   font-size: 13px;
   font-family: "Proxima Nova Bold";
@@ -124,6 +130,11 @@
   color: #cd1225;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
+}
+
+
+.nav__btn.active {
+  color: #cd1225;
 }
 
 
@@ -197,6 +208,18 @@
   background-color: #fff;
   border-top: 6px solid #2b325f;
   margin-bottom: 50px;
+}
+
+
+.header__top.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 @media screen and (max-width: 991px) {
@@ -1870,6 +1893,11 @@ input.contacts__input::placeholder {
 }
 
 
+.open-menu .btn__mobile-close {
+  display: block;
+}
+
+
 .btn__mobile-close-line:before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -1927,6 +1955,31 @@ input.contacts__input::placeholder {
   width: 28px;
   height: 2px;
   background-color: #fff;
+}
+
+
+.btn_fixed {
+  display: none;
+  margin-top: 25px;
+}
+
+
+.fixed .btn_fixed {
+  display: block;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  
+  .fixed .btn_fixed {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  .fixed .btn_fixed {
+    display: none;
+  }
 }
 
 
@@ -2182,4 +2235,22 @@ input {
 
 .clearfix {
   zoom: 1;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+
+.visibly {
+  opacity: 1;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }

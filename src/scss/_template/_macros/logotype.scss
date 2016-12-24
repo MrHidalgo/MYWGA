@@ -17,13 +17,14 @@ $f-PN_black         : return-value(fonts, PN_black);
 /// MAIN BLOCK
 ///
 .logotype {
+	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	@include mixinDimensions(280px, 62px);
 	border: 1px solid $c-fireEngineRed;
 	text-align: center;
 	margin-top: 30px;
-	@include respond-to(extra-small) {
+	@include respond-to(medium-all) {
 		width: 220px;
 	}
 
@@ -36,7 +37,7 @@ $f-PN_black         : return-value(fonts, PN_black);
 		color: $c-atlantis;
 		line-height: 62px;
 		letter-spacing: 10px;
-		@include respond-to(extra-small) {
+		@include respond-to(medium-all) {
 			font-size: 25px;
 		}
 	}
@@ -64,7 +65,7 @@ $f-PN_black         : return-value(fonts, PN_black);
 		font-size: 15px;
 		background-color: $c-white;
 		line-height: 1;
-		@include respond-to(extra-small) {
+		@include respond-to(medium-all) {
 			font-size: 13px;
 		}
 	}

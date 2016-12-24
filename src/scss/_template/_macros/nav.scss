@@ -41,6 +41,10 @@ $f-PN_bold          : return-value(fonts, PN_bold);
 			height: 100%;
 			background-color: #fff;
 		}
+
+		&.animated {
+			display: block;
+		}
 	}
 
 
@@ -62,6 +66,11 @@ $f-PN_bold          : return-value(fonts, PN_bold);
 		&:hover {
 			color: $c-fireEngineRed;
 			transition: all .3s ease-in;
+		}
+
+
+		&.active {
+			color: $c-fireEngineRed;
 		}
 	}
 }

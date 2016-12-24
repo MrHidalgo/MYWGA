@@ -68,6 +68,11 @@ $f-PN_black         : return-value(fonts, PN_black);
 			@include mixinDimensions(50px);
 
 
+			.open-menu & {
+				display: block;
+			}
+
+
 			&-line {
 
 
@@ -121,6 +126,23 @@ $f-PN_black         : return-value(fonts, PN_black);
 				content: "";
 				@include mixinDimensions(28px, 2px);
 				background-color: $c-white;
+			}
+		}
+	}
+
+
+	&_fixed {
+		display: none;
+		margin-top: 25px;
+
+
+		.fixed &{
+			display: block;
+			@include respond-to(large) {
+				display: none;
+			}
+			@include respond-to(medium-all) {
+				display: none;
 			}
 		}
 	}

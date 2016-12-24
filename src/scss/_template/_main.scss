@@ -108,3 +108,10 @@ input{
 .clearfix {
 	zoom: 1;
 }
+
+.hidden{opacity:0}
+.visibly{opacity:1}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}

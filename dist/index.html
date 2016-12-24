@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>MYWGA</title>
+    <title>Make your website great again</title>
     <!--link(rel="icon" type="image/png" href="./img/favicon.png")-->
     <link href="./css/common.min.css" rel="stylesheet"/>
     <link href="./css/fonts.min.css" rel="stylesheet"/>
@@ -18,9 +18,9 @@
             <p class="logotype__title">WEBSITE</p><span class="logotype__subtitle-0">MAKE YOUR</span><span class="logotype__subtitle-1">GREAT AGAIN</span>
           </div>
           <div class="nav"><a href="javascript:void(0);" class="btn__mobile"><span class="btn__mobile-line"></span></a>
-            <div class="nav__row"><a href="#test" class="nav__btn">WHAT TO DO?</a><a href="#test" class="nav__btn">HOW IT WORKS</a><a href="#test" class="nav__btn">WHO WE ARE</a><a href="javascript:void(0);" class="btn__mobile-close"><span class="btn__mobile-close-line"></span></a>
+            <div class="nav__row"><a href="#do" class="nav__btn">WHAT TO DO?</a><a href="#works" class="nav__btn">HOW IT WORKS</a><a href="#are" class="nav__btn">WHO WE ARE</a><a href="javascript:void(0);" class="btn__mobile-close"><span class="btn__mobile-close-line"></span></a>
             </div>
-          </div>
+          </div><a href="javascript:void(0);" class="btn btn_header btn_fixed btn_red"><i class="btn__icon"></i><span class="btn__text">GET THE RESQUE NOW</span></a>
         </div>
       </div>
       <div class="container">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="do">
+    <div id="do" class="do">
       <div class="container">
         <p class="do__title main__title">THAT`S EXACTLY WHAT WE DO. AND IT WORKS. </br> THE FORMULA OF SUCCESS IS THAT EASY:</p>
         <div class="do__row">
@@ -127,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="works">
+    <div id="works" class="works">
       <div class="container">
         <p class="works__title main__title">HOW IT WORKS?</p>
         <div class="works__row">
@@ -210,7 +210,7 @@
         <div class="build__right"><img src="./img/img-build.png" class="img-responsive build__img"></div>
       </div>
     </div>
-    <div class="are">
+    <div id="are" class="are">
       <div class="container">
         <p class="are__title main__title">WHO WE ARE?</p>
         <p class="are__subtitle">The tem of SEO professionals focused on the most difficult cases and formed to help site owners </br> get their trafic back after Google Penalties, Panda, Penguine and other filters.</p>
@@ -218,7 +218,7 @@
           <div class="are__block">
                 <div class="circle circle_big circle_white circle__are-0">
                   <div class="circle__internal">
-                    <p class="circle__title">8</p>
+                    <p data-from="0" data-to="8" class="circle__title">8</p>
                     <p class="circle__subtitle">years</p>
                   </div>
                 </div>
@@ -227,7 +227,7 @@
           <div class="are__block">
                 <div class="circle circle_big circle_white circle__are-1">
                   <div class="circle__internal">
-                    <p class="circle__title">143</p>
+                    <p data-from="0" data-to="143" class="circle__title">143</p>
                     <p class="circle__subtitle">cases</p>
                   </div>
                 </div>
@@ -236,7 +236,7 @@
           <div class="are__block">
                 <div class="circle circle_big circle_white circle__are-2">
                   <div class="circle__internal">
-                    <p class="circle__title">54</p>
+                    <p data-from="0" data-to="54" class="circle__title">54</p>
                     <p class="circle__subtitle">specialists</p>
                   </div>
                 </div>
@@ -245,7 +245,7 @@
           <div class="are__block">
                 <div class="circle circle_big circle_white circle__are-3">
                   <div class="circle__internal">
-                    <p class="circle__title">57.2</p>
+                    <p data-from="0" data-to="57.2" class="circle__title">57.2</p>
                     <p class="circle__subtitle">millions</p>
                   </div>
                 </div>
@@ -330,6 +330,7 @@
     </footer>
     <script src="./script/jquery-1.11.1.min.js"></script>
     <script src="./script/jquery.viewportchecker.min.js"></script>
+    <script src="./script/jquery.countTo.js"></script>
     <script src="./script/main.min.js"></script>
   </body>
 </html>
