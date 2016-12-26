@@ -41,15 +41,21 @@ $c-atlantis         : return-value(color, atlantis);
 			width: 100%;
 			z-index: 100;
 			box-shadow: 0 0 10px 0 rgba(0,0,0,.45);
-			transition: all .5s ease-in;
 		}
 	}
 
 
 	&__left {
+		position: relative;
 		@include respond-to(medium-all) {
 			text-align: center;
 			margin-bottom: 20px;
+		}
+
+
+		iframe {
+			position: absolute;
+			@include mixinDimensions($w-all);
 		}
 	}
 
@@ -67,6 +73,8 @@ $c-atlantis         : return-value(color, atlantis);
 		display: inline-block;
 		margin-right: -.32em;
 		vertical-align: top;
+		width: 50%;
+		min-height: 310px;
 		@include respond-to(large) {
 			width: 50%;
 		}

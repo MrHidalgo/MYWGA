@@ -2,11 +2,11 @@ function scrollWindowNavigationFixedLarge() {
     var countScroll     = $(window).scrollTop(),
         navigationBlock = $('.header__top');
 
-    if (countScroll > 130 ) {
-        navigationBlock.addClass("fixed");
+    if (countScroll > 440 ) {
+        navigationBlock.addClass("fixed animated fadeInDown");
     }
     else {
-        navigationBlock.removeClass("fixed");
+        navigationBlock.removeClass("fixed animated fadeInDown");
     }
 }
 
@@ -74,7 +74,7 @@ $(document).ready(function(){
     /* ANIMATION - VIEW PORT CHECK PAGE */
     if($(window).width() > '767') {
         $('.reason__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated fadeInRight',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
@@ -89,12 +89,12 @@ $(document).ready(function(){
             }
         );
         $('.do__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated bounceInLeft',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
         $('.works__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated bounceInRight',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
@@ -109,12 +109,12 @@ $(document).ready(function(){
             }
         );
         $('.testimonials__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated flipInX',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
         $('.are__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated fadeInUp',
+                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden',
                 callbackFunction: function(){
                     $('.circle__title').countTo(
