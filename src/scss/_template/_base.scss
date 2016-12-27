@@ -178,6 +178,13 @@ $f-PN_black         : return-value(fonts, PN_black);
 
 	&_red {
 		background-color: $c-fireEngineRed;
+		transition: all .3s ease-in;
+
+
+		&:hover {
+			background-color: $c-atlantis;
+			transition: all .3s linear;
+		}
 	}
 
 

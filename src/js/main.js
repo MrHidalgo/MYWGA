@@ -73,11 +73,6 @@ $(document).ready(function(){
 
     /* ANIMATION - VIEW PORT CHECK PAGE */
     if($(window).width() > '767') {
-        $('.reason__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated slideInUp',
-                classToRemove : 'hidden'
-            }
-        );
         $('.idea__left-title').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInLeft',
                 classToRemove : 'hidden'
@@ -85,16 +80,6 @@ $(document).ready(function(){
         );
         $('.idea__right').addClass('hidden').viewportChecker({
                 classToAdd: 'visible animated slideInRight',
-                classToRemove : 'hidden'
-            }
-        );
-        $('.do__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated slideInUp',
-                classToRemove : 'hidden'
-            }
-        );
-        $('.works__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated slideInUp',
                 classToRemove : 'hidden'
             }
         );
@@ -108,9 +93,64 @@ $(document).ready(function(){
                 classToRemove : 'hidden'
             }
         );
-        $('.testimonials__row').addClass('hidden').viewportChecker({
-                classToAdd: 'visible animated slideInUp',
-                classToRemove : 'hidden'
+        $('.lose__count-num-0').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-0').countTo(
+                        {
+                            speed: 60000
+                        }
+                    )
+                }
+            }
+        );
+        $('.lose__count-num-1').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-1').countTo(
+                        {
+                            speed: 50000
+                        }
+                    )
+                }
+            }
+        );
+        $('.lose__count-num-2').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-2').countTo(
+                        {
+                            speed: 40000
+                        }
+                    )
+                }
+            }
+        );
+        $('.lose__count-num-3').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-3').countTo(
+                        {
+                            speed: 30000
+                        }
+                    )
+                }
+            }
+        );
+        $('.lose__count-num-4').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-4').countTo(
+                        {
+                            speed: 20000
+                        }
+                    )
+                }
+            }
+        );
+        $('.lose__count-num-5').viewportChecker({
+                callbackFunction: function(){
+                    $('.lose__count-num-5').countTo(
+                        {
+                            speed: 10000
+                        }
+                    )
+                }
             }
         );
         $('.are__row').addClass('hidden').viewportChecker({

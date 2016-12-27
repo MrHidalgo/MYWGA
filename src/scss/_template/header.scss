@@ -47,6 +47,7 @@ $c-atlantis         : return-value(color, atlantis);
 
 	&__left {
 		position: relative;
+		overflow: hidden;
 		@include respond-to(medium-all) {
 			text-align: center;
 			margin-bottom: 20px;
@@ -55,7 +56,10 @@ $c-atlantis         : return-value(color, atlantis);
 
 		iframe {
 			position: absolute;
-			@include mixinDimensions($w-all);
+			top: 0;
+			left: 0;
+			overflow: hidden !important;
+			@include mixinDimensions($w-all, $w-all + 10);
 		}
 	}
 

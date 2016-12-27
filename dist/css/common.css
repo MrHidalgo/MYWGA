@@ -223,6 +223,7 @@
 
 .header__left {
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
@@ -236,8 +237,11 @@
 
 .header__left iframe {
   position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden !important;
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 
@@ -1154,6 +1158,7 @@
 
 
 .lose__count-num {
+  display: inline-block;
   width: 42px;
   height: 72px;
   background-color: #fff;
@@ -2036,6 +2041,15 @@ input.contacts__input::placeholder {
 
 .btn_red {
   background-color: #cd1225;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+
+.btn_red:hover {
+  background-color: #2b325f;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 

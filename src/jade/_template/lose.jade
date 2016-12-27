@@ -1,3 +1,11 @@
+-
+    var dataFrom = [
+        "0", "0", "0", "0", "0", "0"
+    ];
+    var dataTo = [
+        "9", "9", "9", "9", "9", "9"
+    ];
+
 
 .lose
     .container
@@ -8,7 +16,7 @@
             .lose__count
                 div.lose__count-wrap
                     -for(var i = 0; i < 6; i++)
-                        span.lose__count-num!= "0"
+                        span(class="lose__count-num lose__count-num-" + i, data-from= dataFrom[i], data-to=dataTo[i])!= "0"
                 span.lose__count-text!= "$"
 
             a(href="javascript:void(0);", class="btn btn_red")
